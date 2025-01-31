@@ -1,0 +1,575 @@
+/* Reseta margens e fontes padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body e fontes */
+  body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    background-color: #fff; /* Cor de fundo branca */
+    color: #333; /* Cor do texto */
+  }
+  
+  /* Títulos */
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #490010; /* Cor vinho para títulos */
+  }
+  
+  /* Cabeçalho */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6); /* Branco com 60% de transparência */
+    padding: 20px;
+    color: #490010; /* Cor vinho para o texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombrinha suave para destacar a navbar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+    transition: background-color 0.3s ease; /* Suaviza a transição do efeito de opacidade */
+  }
+  
+  header.scrolled {
+    background-color: rgba(255, 255, 255, 0.4); /* Transparente quando rolar */
+  }
+  
+  /* Logo */
+  header .logo h1 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    color: #490010; /* Cor vinho */
+  }
+  
+  /* Navegação */
+  nav ul {
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #490010;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Efeito suave para a cor do link */
+  }
+  
+  nav ul li a:hover {
+    color: #b68d60; /* Cor dourada no hover */
+  }
+  
+  /* Botão de Reserva no Header */
+  header .btn-reserva {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid #490010; /* Borda dourada */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #490010; /* Cor dourada no texto */
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza a transição */
+  }
+  
+  header .btn-reserva:hover {
+    background-color: #b68d60; /* Fundo dourado no hover */
+    color: #fff; /* Texto branco no hover */
+  }
+  
+  /* Botões "Ver Menu" e "Fazer Reserva" - Transparentes */
+  .cta-buttons a {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid #b68d60; /* Borda dourada */
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white; /* Cor dourada para o texto */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-buttons a:hover {
+    background-color: #b68d60; /* Fundo dourado ao passar o mouse */
+    color: white; /* Texto branco quando o botão estiver ativo */
+    border: 2px solid #b68d60; /* Mantém a borda dourada no hover */
+  }
+  
+  /* Categoria de Menu */
+  .menu-category {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .menu-category.visible {
+    opacity: 1;
+  }
+  
+  /* Banner */
+  .banner {
+    position: relative;
+    height: 100vh; /* Ocupa toda a tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Impede o conteúdo de sair da área do banner */
+    margin-top: 90px; /* Espaço para a navbar */
+  }
+  
+  .banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Faz com que a imagem ocupe toda a tela */
+    object-fit: cover;
+    z-index: 0; /* Coloca a imagem atrás */
+  }
+  
+  /* Overlay para o gradiente */
+  .overlay {
+    position: absolute;
+    top: 0; /* O gradiente começa no topo da imagem */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cobre toda a altura da imagem */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    z-index: 1; /* Coloca o gradiente acima da imagem */
+  }
+  
+  /* Conteúdo da Hero */
+  .hero-content {
+    position: relative; /* Fica sobre o gradiente e imagem */
+    z-index: 2; /* Coloca o conteúdo acima do gradiente */
+    color: #FFE0B2;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #FFE0B2;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+  
+  .cta-buttons .btn {
+    background-color: transparent;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    margin: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-buttons .btn:hover {
+    background-color: #490010;
+    color: #fff;
+  }
+  
+  /* Seção Menu */
+  .menu {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .menu-header h2 {
+    font-size: 2rem;
+    color: #490010;
+    margin-bottom: 15px;
+  }
+  
+  .menu-header p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .menu-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .menu-category {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-out;
+  }
+  
+  .menu-category h3 {
+    font-size: 1.8rem;
+    color: #490010;
+    margin-bottom: 15px;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #D4AF37;
+  }
+  
+  .item-info {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .item-info h4 {
+    font-size: 1.3rem;
+    color: #490010;
+    margin-bottom: 8px;
+  }
+  
+  .item-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  
+  .item-info .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #D4AF37;
+  }
+  
+  .menu-category:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Seção Sobre Nós */
+.about {
+    padding: 80px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    color: #490010;
+    margin-bottom: 30px;
+  }
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+  }
+  
+  .team {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .team-member {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #D4AF37;
+    margin-bottom: 20px;
+  }
+  
+  .team-member-info {
+    text-align: center;
+  }
+  
+  .team-member-info p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .team-member-info p strong {
+    color: #490010;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .team {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-member {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .team-member img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  /* Seção Contato */
+  .contact {
+    padding: 50px 20px;
+    background-color: #fff;  /* Cor de fundo branco para a seção */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    color: #490010;  /* Cor vinho para o título */
+    margin-bottom: 30px;
+  }
+  
+  .contact-content {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    background-color: #fff; /* Fundo branco para o formulário */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-content label {
+    font-weight: bold;
+    color: #490010; /* Cor vinho para os labels */
+  }
+  
+  .contact-content input,
+  .contact-content textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-content button {
+    background-color: #b68d60; /* Cor dourada para o botão */
+    border: none;
+    padding: 12px 30px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-content button:hover {
+    background-color: #C89F31; /* Dourado mais escuro no hover */
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .contact-content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .menu-categories {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-category {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .team {
+      flex-direction: column;
+    }
+  
+    .team-member img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  /* Seção Reservas */
+.reservas {
+    padding: 50px 20px;
+    background-color: #fff; /* Fundo branco */
+    text-align: center;
+}
+
+.reservas h2 {
+    font-size: 2.5rem;
+    color: #490010; /* Cor vinho para o título */
+    margin-bottom: 30px;
+}
+
+#reservaForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7; /* Fundo cinza claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#reservaForm label {
+    display: block;
+    font-weight: bold;
+    color: #490010; /* Cor vinho para os labels */
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+#reservaForm input,
+#reservaForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#reservaForm textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#reservaForm button {
+    background-color: #b68d60; /* Cor dourada para o botão */
+    border: none;
+    padding: 12px 30px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+#reservaForm button:hover {
+    background-color: #C89F31; /* Dourado mais escuro no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .reservas {
+        padding: 30px 10px;
+    }
+
+    #reservaForm {
+        padding: 15px;
+    }
+
+    #reservaForm input,
+    #reservaForm textarea {
+        font-size: 0.9rem;
+    }
+
+    #reservaForm button {
+        padding: 10px 20px;
+    }
+}
+  
+  /* Footer */
+  footer {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .footer-container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .footer-bottom p{
+    text-align: center;
+  }
+  
+  .contact-info {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .contact-info p {
+    margin-bottom: 10px;
+  }
+  
+  .whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .whatsapp-btn i {
+    margin-right: 10px;
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #128c7e; /* Cor mais escura quando passar o mouse */
+  }
+  

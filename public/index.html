@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samba in Paris</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <h1>Samba in Paris</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Cardápio</a></li>
+        <li><a href="#about">Nossa História</a></li>
+        <li><a href="#reservas">Reservas</a></li>
+
+        <li><a href="login.html">Login</a></li> <!-- Botão de Login -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section id="home">
+    <section class="banner">
+      <img src="img/capa2.jpg" alt="banner">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>O Sabor da França ao Seu Alcance</h1>
+        <p>O Único Lugar Onde o Ratatouille é Bem-Vindo!</p>
+        <div class="cta-buttons">
+          <a href="#menu" class="btn">Ver Menu</a>
+          <a href="login.html" class="btn">Fazer Login</a> <!-- Botão de Login -->
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Seção Menu -->
+  <section id="menu" class="menu">
+    <div class="menu-header">
+      <h2>Nosso Cardápio</h2>
+      <p>Explore as deliciosas opções da culinária francesa, feitas com ingredientes de qualidade e muito sabor.</p>
+    </div>
+    <!-- Conteúdo do cardápio aqui -->
+    <div class="menu-categories">
+      
+        <!-- Entradas -->
+  <div class="menu-category">
+    <h3>Entradas</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="img/Soupe à l'oignon.webp" alt="Soupe à l'oignon">
+        <div class="item-info">
+          <h4>Soupe à l'oignon</h4>
+          <p>Tradicional sopa francesa de cebola gratinada com queijo derretido.</p>
+          <span class="price">R$ 25,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Escargots de Bourgogne.jpg" alt="Escargots de Bourgogne">
+        <div class="item-info">
+          <h4>Escargots de Bourgogne</h4>
+          <p>Caracóis preparados com manteiga de alho, ervas e especiarias frescas.</p>
+          <span class="price">R$ 30,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Foie Gras.jpg" alt="Foie Gras">
+        <div class="item-info">
+          <h4>Foie Gras</h4>
+          <p>Delicioso patê de fígado de pato ou ganso, servido com torradas.</p>
+          <span class="price">R$ 60,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Tartare de Boeuf.jpg" alt="Tartare de Boeuf">
+        <div class="item-info">
+          <h4>Tartare de Boeuf</h4>
+          <p>Carne crua de boi picada, temperada com especiarias, cebola e mostarda.</p>
+          <span class="price">R$ 45,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Salade Niçoise.jpg" alt="Salade Niçoise">
+        <div class="item-info">
+          <h4>Salade Niçoise</h4>
+          <p>Salada de atum, ovos cozidos, azeitonas, feijão verde e batatas, com molho de mostarda.</p>
+          <span class="price">R$ 40,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Chaudrée de Fruits de Mer.jpg" alt="Chaudrée de Fruits de Mer">
+        <div class="item-info">
+          <h4>Chaudrée de Fruits de Mer</h4>
+          <p>Sopa cremosa de frutos do mar, com batatas, cebolas e alho-poró.</p>
+          <span class="price">R$ 50,00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+        <!-- Pratos Principais -->
+  <div class="menu-category">
+    <h3>Pratos Principais</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="img/Boeuf Bourguignon.jpg" alt="Boeuf Bourguignon">
+        <div class="item-info">
+          <h4>Boeuf Bourguignon</h4>
+          <p>Carne de boi cozida lentamente em vinho tinto, cebolas e cogumelos.</p>
+          <span class="price">R$ 75,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Coq au Vin.jpg" alt="Coq au Vin">
+        <div class="item-info">
+          <h4>Coq au Vin</h4>
+          <p>Frango macio cozido com vinho tinto, cogumelos e especiarias.</p>
+          <span class="price">R$ 65,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Ratatouille.jpg" alt="Ratatouille">
+        <div class="item-info">
+          <h4>Ratatouille</h4>
+          <p>Guisado de legumes frescos da estação, temperado com ervas francesas.</p>
+          <span class="price">R$ 55,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Magret de Canard.jpg" alt="Magret de Canard">
+        <div class="item-info">
+          <h4>Magret de Canard</h4>
+          <p>Peito de pato grelhado, servido com molho de frutas vermelhas.</p>
+          <span class="price">R$ 80,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Chateaubriand.jpg" alt="Chateaubriand">
+        <div class="item-info">
+          <h4>Chateaubriand</h4>
+          <p>Corte nobre de carne, servido com molho béarnaise e acompanhamentos.</p>
+          <span class="price">R$ 100,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Blanquette de Veau.jpg" alt="Blanquette de Veau">
+        <div class="item-info">
+          <h4>Blanquette de Veau</h4>
+          <p>Guisado de vitela com molho branco cremoso e arroz.</p>
+          <span class="price">R$ 70,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Quiche Lorraine.jpg" alt="Quiche Lorraine">
+        <div class="item-info">
+          <h4>Quiche Lorraine</h4>
+          <p>Torta salgada recheada com bacon, queijo e creme de leite.</p>
+          <span class="price">R$ 55,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Sole Meunière.jpg" alt="Sole Meunière">
+        <div class="item-info">
+          <h4>Sole Meunière</h4>
+          <p>Peixe sole grelhado, com molho de manteiga, limão e salsinha.</p>
+          <span class="price">R$ 95,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Confit de Canard.jpg" alt="Confit de Canard">
+        <div class="item-info">
+          <h4>Confit de Canard</h4>
+          <p>Pato cozido lentamente em sua própria gordura, com crosta crocante.</p>
+          <span class="price">R$ 85,00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+        <!-- Sobremesas -->
+  <div class="menu-category">
+    <h3>Sobremesas</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="img/Crème Brûlée.jpg" alt="Crème Brûlée">
+        <div class="item-info">
+          <h4>Crème Brûlée</h4>
+          <p>Creme de baunilha com uma crosta de açúcar caramelizado.</p>
+          <span class="price">R$ 20,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Tarte Tatin.jpg" alt="Tarte Tatin">
+        <div class="item-info">
+          <h4>Tarte Tatin</h4>
+          <p>Torta invertida de maçãs caramelizadas.</p>
+          <span class="price">R$ 25,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/madelines.jpg" alt="Madeleines">
+        <div class="item-info">
+          <h4>Madeleines</h4>
+          <p>Pequenos bolinhos de baunilha, levemente crocantes.</p>
+          <span class="price">R$ 15,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Éclair.jpg" alt="Éclair">
+        <div class="item-info">
+          <h4>Éclair</h4>
+          <p>Deliciosa massa choux recheada com creme de baunilha e coberta com ganache de chocolate.</p>
+          <span class="price">R$ 22,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Mousse au Chocolat.jpg" alt="Mousse au Chocolat">
+        <div class="item-info">
+          <h4>Mousse au Chocolat</h4>
+          <p>Uma mousse de chocolate rica e cremosa, perfeita para os amantes de chocolate.</p>
+          <span class="price">R$ 18,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Profiteroles.jpg" alt="Profiteroles">
+        <div class="item-info">
+          <h4>Profiteroles</h4>
+          <p>Pequenas bolas de massa choux recheadas com creme e cobertas com chocolate.</p>
+          <span class="price">R$ 30,00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+        <!-- Vinhos e Queijos -->
+    <section>
+  <div class="menu-category">
+    <h3>Vinhos & Queijos</h3>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="img/Château Margaux.jpg" alt="Château Margaux">
+        <div class="item-info">
+          <h4>Château Margaux</h4>
+          <p>Vinho tinto premiado da região de Bordeaux.</p>
+          <span class="price">R$ 150,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Chablis Premier Cru.jpg" alt="Chablis Premier Cru">
+        <div class="item-info">
+          <h4>Chablis Premier Cru</h4>
+          <p>Vinho branco elegante e refrescante do Vale do Loire.</p>
+          <span class="price">R$ 120,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/catena.jpg" alt="Catena">
+        <div class="item-info">
+          <h4>Catena</h4>
+          <p>Vinho tinto premium da vinícola Catena Zapata, localizada em Mendoza, Argentina.</p>
+          <span class="price">R$ 170,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Chèvre.jpg" alt="Chèvre">
+        <div class="item-info">
+          <h4>Chèvre</h4>
+          <p>Queijo de cabra, com sabor marcante e textura cremosa, típico da região do Vale do Loire.</p>
+          <span class="price">R$ 110,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Emmental.jpg" alt="Emmental">
+        <div class="item-info">
+          <h4>Emmental</h4>
+          <p>Queijo suíço de pasta dura, com buracos característicos e sabor suave.</p>
+          <span class="price">R$ 130,00</span>
+        </div>
+      </div>
+      <div class="menu-item">
+        <img src="img/Reblochon.jpg" alt="Reblochon">
+        <div class="item-info">
+          <h4>Reblochon</h4>
+          <p>Queijo de pasta macia, com casca fina e sabor levemente adocicado, da região de Savoia.</p>
+          <span class="price">R$ 150,00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    </section>
+
+<!-- Seção Sobre Nós -->
+<section id="about" class="about">
+    <h2>Nossa História</h2>
+    <p class="about-description">Desde a nossa fundação, nos dedicamos a oferecer uma experiência gastronômica única, combinando a tradição da culinária francesa com toques contemporâneos. Inspirados pelo renomado Chef Alex Atala, nosso restaurante é um reflexo da paixão pela alta gastronomia e pela busca constante pela excelência.</p>
+    <div class="team">
+      <div class="team-member">
+        <img src="img/cheff.jpg" alt="Chef Alex Atala">
+        <div class="team-member-info">
+          <p><strong>Chef Alex Atala</strong></p>
+          <p>Chef renomado, especializado na fusão de sabores franceses e brasileiros. Com mais de 20 anos de experiência, Alex traz para o nosso restaurante uma visão única e inovadora.</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="img/equipe.jpg" alt="Equipe">
+        <div class="team-member-info">
+          <p><strong>Nossa Equipe</strong></p>
+          <p>Uma equipe dedicada e apaixonada, comprometida em proporcionar aos nossos clientes momentos inesquecíveis através de pratos cuidadosamente elaborados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Reservas -->
+  <section id="reservas" class="reservas">
+    <h2>Faça sua Reserva</h2>
+    <form id="reservaForm">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" name="telefone">
+
+      <label for="data">Data da Reserva:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="horario">Horário da Reserva:</label>
+      <input type="time" id="horario" name="horario" required>
+
+      <label for="numero_pessoas">Número de Pessoas:</label>
+      <input type="number" id="numero_pessoas" name="numero_pessoas" min="1" required>
+
+      <label for="mensagem">Mensagem (Opcional):</label>
+      <textarea id="mensagem" name="mensagem"></textarea>
+
+      <button type="submit" class="btn">Reservar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-container">
+      <div class="contact-info">
+        <p><strong>Endereço:</strong> Lago Sul, DF</p>
+        <p><strong>Telefone:</strong> (61) 4002-6922</p>
+        <p><strong>E-mail:</strong> contato@sambainparis.com</p>
+        <a href="https://wa.me/61991307643" class="whatsapp-btn" target="_blank">
+          <i class="fab fa-whatsapp"></i> Fale Conosco
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Samba in Paris. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+
+  <script src="js/script.js"></script>
+  <script src="./js/rolagem.js"></script>
+</body>
+</html>
