@@ -1,5 +1,8 @@
 # api_samba_in_paris
 
+#Integrantes do Grupo:
+Luane, Debora, Izabella, Batista, Victória
+
 #Configurações para rodar no terminal
 ## Tecnologias Utilizadas
 - **Node.js**: Ambiente de execução JavaScript no servidor.
